@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="729.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeScreenController">
+   <children>
+      <TableView fx:id="CustomerTable" layoutX="29.0" layoutY="71.0" prefHeight="192.0" prefWidth="554.0">
+        <columns>
+          <TableColumn fx:id="customerID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="customerName" prefWidth="99.0" text="Name" />
+            <TableColumn fx:id="customerAddress" prefWidth="81.0" text="Address" />
+            <TableColumn fx:id="customerPostalCode" prefWidth="121.0" text="Postal Code" />
+            <TableColumn fx:id="customerNumber" prefWidth="97.0" text="Phone Number" />
+            <TableColumn fx:id="customerDivisionID" text="Division ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="35.0" layoutY="27.0" text="Customers">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="75.0" layoutY="275.0" mnemonicParsing="false" onAction="#onAddCustomerClicked" prefHeight="25.0" prefWidth="104.0" text="Add Customer" />
+      <Button layoutX="193.0" layoutY="275.0" mnemonicParsing="false" onAction="#onUpdateCustomerClicked" text="Update Customer " />
+      <Button layoutX="323.0" layoutY="275.0" mnemonicParsing="false" onAction="#onDeleteClicked" prefHeight="25.0" prefWidth="113.0" text="Delete Customer" />
+      <Label layoutX="75.0" layoutY="311.0" text="Appointments">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="AppointmentTable" layoutX="14.0" layoutY="349.0" prefHeight="221.0" prefWidth="893.0">
+        <columns>
+          <TableColumn fx:id="appointmentID" prefWidth="43.0" text="Appointment ID " />
+          <TableColumn fx:id="appointmentTitle" prefWidth="104.0" text="Title " />
+            <TableColumn fx:id="appointmentDescription" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="appointmentLocation" prefWidth="94.0" text="Location" />
+            <TableColumn fx:id="appointmentContact" prefWidth="48.0" text="Contact" />
+            <TableColumn fx:id="appointmentType" prefWidth="156.0" text="Type" />
+            <TableColumn fx:id="appointmentStart" prefWidth="114.0" text="Start" />
+            <TableColumn fx:id="appointmentEnd" minWidth="0.0" prefWidth="104.0" text="End" />
+            <TableColumn fx:id="appointmentCustomerID" minWidth="9.0" text="Customer_ID" />
+            <TableColumn fx:id="appointmentUserID" prefWidth="74.0" text="User_ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="12.0" layoutY="583.0" mnemonicParsing="false" onAction="#onNewApptClicked" prefHeight="25.0" prefWidth="126.0" text="New Appointment" />
+      <Button layoutX="149.0" layoutY="583.0" mnemonicParsing="false" onAction="#updateAppointmentClicked" text="Update Appointment" />
+      <Button layoutX="289.0" layoutY="583.0" mnemonicParsing="false" onAction="#deleteAppointmentClicked" text="Delete Appointment" />
+      <RadioButton layoutX="657.0" layoutY="318.0" mnemonicParsing="false" onAction="#onShowWeek" text="View By Week">
+         <toggleGroup>
+            <ToggleGroup fx:id="view" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="539.0" layoutY="318.0" mnemonicParsing="false" onAction="#onMonth" text="View By Month" toggleGroup="$view" />
+      <RadioButton layoutX="454.0" layoutY="318.0" mnemonicParsing="false" onAction="#onShowAll" text="Show All" toggleGroup="$view" />
+      <Button layoutX="435.0" layoutY="583.0" mnemonicParsing="false" onAction="#onReportsClicked" prefHeight="25.0" prefWidth="129.0" text="Reports Page" />
+      <Label fx:id="upcomingappointmentsLabel" layoutX="5.0" layoutY="645.0" prefHeight="49.0" prefWidth="873.0" text="You have no upcoming appointments" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

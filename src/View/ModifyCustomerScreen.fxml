@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifyCustomerController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="customerName" layoutX="190.0" layoutY="90.0" />
+            <Label fx:id="customerNameLabel" layoutX="101.0" layoutY="93.0" prefHeight="17.0" prefWidth="74.0" text="Name" />
+            <Label fx:id="customerAddressLabel" layoutX="101.0" layoutY="132.0" prefHeight="17.0" prefWidth="57.0" text="Address" />
+            <TextField fx:id="customerAddress" layoutX="190.0" layoutY="129.0" />
+            <TextField fx:id="customerPostalCode" layoutX="190.0" layoutY="169.0" />
+            <Label fx:id="customerPostalCodeLabel" layoutX="101.0" layoutY="172.0" text="Postal Code" />
+            <TextField fx:id="customerNumber" layoutX="190.0" layoutY="216.0" />
+            <Label fx:id="numberLabel" layoutX="101.0" layoutY="219.0" text="Phone Number" />
+            <Label fx:id="countryLabel" layoutX="101.0" layoutY="262.0" text="Country" />
+            <ComboBox fx:id="countryComboBox" layoutX="190.0" layoutY="258.0" onAction="#onCountryClicked" prefWidth="150.0" />
+            <ComboBox fx:id="divisionComboBox" layoutX="190.0" layoutY="305.0" prefWidth="150.0" />
+            <Label fx:id="divisionIDLabel" layoutX="101.0" layoutY="309.0" text="Division ID" />
+            <Label fx:id="customerIDLabel" layoutX="101.0" layoutY="61.0" text="Customer ID" />
+            <TextField fx:id="customerID" editable="false" layoutX="190.0" layoutY="57.0" text="1" />
+            <Button layoutX="103.0" layoutY="350.0" mnemonicParsing="false" onAction="#onSubmitClicked" text="Submit" />
+            <Button layoutX="175.0" layoutY="350.0" mnemonicParsing="false" onAction="#onCancelClicked" text="Cancel" />
+            <Label layoutX="135.0" layoutY="6.0" text="Modify Customer ">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
