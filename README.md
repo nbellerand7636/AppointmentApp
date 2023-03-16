@@ -53,6 +53,3 @@ Each of the tabs has a "Refresh" button. This button causes the application to q
 
 All times are expressed in 24-hour "military" time for the user's time zone.
 
-## Lambdas Labels
-
-The JavaDoc comments include a number of paragraphs labelled "LAMBDA" to meet the class requirement that I justify in comments all lambdas appearing in the code.
