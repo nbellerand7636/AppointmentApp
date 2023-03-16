@@ -1,6 +1,6 @@
 # Scheduling App
 
-Written in Java/JavaFX for a pre-existing MySQL database. Submitted April 11, 2021.
+Written in Java/JavaFX for a pre-existing MySQL database. 
 
 ## Purpose
 
