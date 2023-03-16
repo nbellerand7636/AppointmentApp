@@ -26,15 +26,6 @@ The easiest way to run the program is as follows:
 5. Set variable PATH_TO_FX to the directory of your JavaFX library (e.g. /Library/javafx-sdk-11.0.2/lib).
 6. Select "Run" and then "Run 'Main'" on the menu bar.
 
-To run the program from the command line using the supplied .class files:\*
-
-1. Within a shell, cd to the project directory.
-2. Within the project directory, cd to out/production/SchedulerClient
-3. export PATH_TO_FX=/Library/javafx-sdk-11.0.2/lib
-4. export PATH_TO_MYSQL_DRIVER=/Library/mysql-connector-java-8.0.23
-5. java --module-path ${PATH_TO_FX}:${PATH_TO_MYSQL_DRIVER} --add-modules javafx.fxml,javafx.controls,javafx.graphics Main
-
-
 ## Using the Program
 
 The application opens with a login form asking for user credentials. Input the credentials for any user in the database. The valid credentials are username 'test' and password 'test' or username 'admin' and password 'admin'.
